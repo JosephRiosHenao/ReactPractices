@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React CDN</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const container = document.querySelector('#root')
+        const root = ReactDOM.createRoot(container)
+        
+        /* 
+        root.render('Hola Mundo')
+        root.render(React.createElement('div', null, 
+            React.createElement('h1',null,'Esto es un h1'),
+            React.createElement('h2',null,'Esto es un h2'),
+            React.createElement('h3',null,'Esto es un h3'),
+            React.createElement('h4',null,'Esto es un h4'),
+        ))
+        
+        root.render(
+            <div>
+                <ol>
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                </ol>
+            </div>
+        ) */
+
+        class Listado1 extends React.Component{
+            render(){
+                return (
+                    <ol>
+                        <li>Elemento</li>
+                        <li>Elemento</li>
+                        <li>Elemento</li>
+                        <li>Elemento</li>
+                        <li>Elemento</li>
+                    </ol>
+                )
+            }
+        }
+
+
+        const Listado2 = () => {
+            return(
+                <ul>
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                </ul>
+            )
+        }
+
+        root.render(
+            <div>
+                <h1>Hola</h1>
+                <Listado1 />
+                <hr/>
+                <Listado2 />
+            </div>
+        )
+
+
+
+
+    </script>
+</body>
+</html>
