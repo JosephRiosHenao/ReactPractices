@@ -1,15 +1,24 @@
-import reactLogo from './assets/react.svg'
-import './App.css'
+import reactLogo from './assets/react.svg';
+import './App.css';
 
-function App() {
+import { useState } from 'react';
 
-  const nombre = 'Joseph'
+
+
+const App = () => {
+  const [contador, setContador] = useState(0);
+  const nombre = 'Joseph';
+  const upContador = () => {setContador(contador+1);}
+  const downContador = () => {setContador(contador-1);}
+
   return (
     <div className="App">
         <h1>Hola {nombre}</h1>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <img src={reactLogo} className="logo react" alt="React logo" />
+        <br />
+        <button onClick={downContador}>-</button>
+        <h2>{ contador }</h2>
+        <button onClick={upContador}>+</button>
     </div>
   )
 }
