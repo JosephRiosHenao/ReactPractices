@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { startTransition, useState } from "react";
 import Alta from "./Alta";
 import Bajo from "./Bajo";
 
@@ -17,3 +17,7 @@ const Temperatura = () => {
 }  
 
 export default Temperatura
+
+
+
+
