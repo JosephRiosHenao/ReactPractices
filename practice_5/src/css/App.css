@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(1, 1, 15, 0.891);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.card {
+    padding: 1rem;
+    border: 5px solid greenyellow;
+    background-color: rgba(172, 255, 47, 0.117);
+    border-radius: 1rem;
+    
+}
+
+.search-input {
+    margin: 0.5em;
+    background-color: rgba(1, 1, 15, 0.891);
+    border: 3px solid white;
+    padding: 0.4rem 0rem;
+    border-radius: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+.button-create {
+    background-color: greenyellow;
+    font-weight: bolder;
+    border: 3px solid white;
+    border-radius: 1rem 0rem;
+    color:rgba(1, 1, 15, 0.891);
+    padding: 0.5rem;
+    font-size: larger;
+    width: 100%;
+    margin-top: 1rem;
+}

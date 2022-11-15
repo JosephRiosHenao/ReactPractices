@@ -5,7 +5,9 @@ export class TodoList extends Component {
     render() {
         return (
             <>
-                
+                <ul>
+                    { this.props.children }
+                </ul>
             </>
         )
     }

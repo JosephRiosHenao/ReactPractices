@@ -3,19 +3,20 @@ import { TodoSearch } from "./components/TodoSearch";
 import { TodoList } from "./components/TodoList";
 import { TodoItem } from "./components/TodoItem";
 import { TodoCreate } from "./components/TodoCreate";
+import "./css/App.css"
 
 function App() {
 
   const TODOs = [
-    { text: "USC", completed: false },
-    { text: "Univalle", completed: false },
-    { text: "POS", completed: false },
-    { text: "CAMACHO", completed: false },
-    { text: "UAO", completed: false },
+    { text: "Tener la Cama", completed: false },
+    { text: "Cepillarme", completed: false },
+    { text: "Comer", completed: false },
+    { text: "Lavar la loza", completed: false },
+    { text: "Dormir", completed: false },
   ]
 
   return (
-    <>
+    <div className="card">
       <TodoHeader />
       <TodoSearch />
       <TodoList>
@@ -24,7 +25,7 @@ function App() {
         ))}
       </TodoList>
       <TodoCreate />
-    </>
+    </div>
   );
 }
 
