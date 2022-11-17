@@ -1,15 +1,15 @@
-import { TodoHeader } from "./components/TodoHeader";
-import { TodoSearch } from "./components/TodoSearch";
-import { TodoList } from "./components/TodoList";
-import { TodoItem } from "./components/TodoItem";
-import { TodoCreate } from "./components/TodoCreate";
+import TodoHeader  from "./components/TodoHeader";
+import TodoSearch  from "./components/TodoSearch";
+import TodoList  from "./components/TodoList";
+import TodoItem  from "./components/TodoItem";
+import TodoCreate  from "./components/TodoCreate";
 import "./css/App.css"
 
 function App() {
 
   const TODOs = [
     { text: "Tener la Cama", completed: false },
-    { text: "Cepillarme", completed: false },
+    { text: "Cepillarme", completed: true },
     { text: "Comer", completed: false },
     { text: "Lavar la loza", completed: false },
     { text: "Dormir", completed: false },

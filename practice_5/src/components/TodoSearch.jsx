@@ -1,8 +1,12 @@
-import React, { Component } from 'react'
 
-export class TodoSearch extends Component {
-    render() { 
-        return (<input className="search-input" type="text" placeholder="Que desea buscar?" />);
-    }
+import React from 'react';
+
+const TodoSearch = () => {
+    return (
+        <>
+            <input className="search-input" type="text" placeholder="Que desea buscar?" />   
+        </>
+    );
 }
 
+export default TodoSearch;

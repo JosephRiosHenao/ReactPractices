@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class TodoHeader extends Component {
-    render() { 
-        return (<h1>Has completado 2 de 3 tareas!</h1>);
-    }
+export default function TodoHeader() {
+  return (
+    <>
+        <h1>Has completado 2 de 3 tareas!</h1>  
+    </>
+  )
 }
-
-export {TodoHeader};

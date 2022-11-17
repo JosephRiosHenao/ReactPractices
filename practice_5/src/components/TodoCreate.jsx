@@ -1,11 +1,20 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class TodoCreate extends Component {
-    render() {
-        return (
-            <>
-                <input type="button" className='button-create' value="+" />
-            </>
-        )
+export default function TodoCreate() {
+
+    const onClickButton = () => {
+        
     }
+
+  return (
+    <>
+        <input 
+            type="button" 
+            className='button-create' 
+            value="+" 
+            onClick={() => onClickButton}
+        />
+    </>
+  )
 }
+

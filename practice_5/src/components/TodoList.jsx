@@ -1,14 +1,13 @@
+import React from 'react';
 
-import React, { Component } from 'react'
-
-export class TodoList extends Component {
-    render() {
-        return (
-            <>
-                <ul>
-                    { this.props.children }
-                </ul>
-            </>
-        )
-    }
+const TodoList = (props) => {
+    return (
+        <>
+            <ul>
+                { props.children }
+            </ul>
+        </>
+    );
 }
+
+export default TodoList;

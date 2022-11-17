@@ -1,11 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class TodoItem extends Component {
-    render() {
-        return (
-            <>
-                <li>{ this.props.text }</li>
-            </>
-        )
-    }
+const TodoItem = (props) => {
+  return (
+    <>
+        <li className={`not-completed ${props.completed && 'completed'}`}>
+            <span>{ props.text }</span>
+            <button className='delete-todo'>X</button>
+        </li>
+    </>
+  )
 }
+
+export default TodoItem
